@@ -14,17 +14,17 @@
       <RowConstraints minHeight="20.0" prefHeight="30.0" />
    </rowConstraints>
    <columnConstraints>
-      <ColumnConstraints minWidth="20.0" prefWidth="100.0" />
-      <ColumnConstraints minWidth="20.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="50.0" prefWidth="150.0" />
+      <ColumnConstraints minWidth="50.0" prefWidth="150.0" />
    </columnConstraints>
    <children>
       <Button fx:id="button1" mnemonicParsing="false" text="Button" />
       <Button fx:id="button3" mnemonicParsing="false" text="Button" GridPane.rowIndex="2" />
       <Button fx:id="button2" mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
-      <Label fx:id="label1" text="Label" GridPane.columnIndex="1" />
-      <Label fx:id="label2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label fx:id="label3" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Label fx:id="labelAnswer" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Button fx:id="buttonAnswer" mnemonicParsing="false" text="Button" GridPane.rowIndex="3" />
+      <Label fx:id="label1" text="0" GridPane.columnIndex="1" />
+      <Label fx:id="label2" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="label3" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="labelAnswer" prefHeight="17.0" prefWidth="145.0" text="Sprawdź" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="buttonAnswer" mnemonicParsing="false" text="Answer" GridPane.rowIndex="3" />
    </children>
 </GridPane>

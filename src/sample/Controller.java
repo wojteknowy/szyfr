@@ -41,7 +41,21 @@ public class Controller {
             number3++;
             label3.setText(Integer.toString(number3));
         });
+        labelAnswer.setText("Pozostało prób 3 ");
 
+        buttonAnswer.setOnAction(event -> {
+            if (number1 == 1 && number2 == 2 && number3 == 9 ){
+                labelAnswer.setText("Brawo odgadłeś szyfr ");
+                buttonAnswer.setDisable(true);
+            }else{
+                count--;
+                if (count <= 0 ){
+                    labelAnswer.setText("Koniec gry");
+                }else {
+                    labelAnswer.setText("Pozostało prób " + this.count);
+                }
+            }
+        });
     }
 
 
