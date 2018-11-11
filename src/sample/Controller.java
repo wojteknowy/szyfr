@@ -46,16 +46,24 @@ public class Controller {
         buttonAnswer.setOnAction(event -> {
             if (number1 == 1 && number2 == 2 && number3 == 9 ){
                 labelAnswer.setText("Brawo odgadłeś szyfr ");
-                buttonAnswer.setDisable(true);
+                buttonDisable();
             }else{
                 count--;
                 if (count <= 0 ){
                     labelAnswer.setText("Koniec gry");
+                    buttonDisable();
                 }else {
                     labelAnswer.setText("Pozostało prób " + this.count);
                 }
             }
         });
+    }
+
+    private void buttonDisable() {
+        buttonAnswer.setDisable(true);
+        button1.setDisable(true);
+        button2.setDisable(true);
+        button3.setDisable(true);
     }
 
 
